@@ -1,0 +1,20 @@
+[
+  { "name": "Python (Expert)", "level": 100 },
+  { "name": "GenAI / LLM Agents", "level": 95 },
+  { "name": "Data Pipelines / ETL", "level": 95 },
+  { "name": "PyTorch / TensorFlow", "level": 90 },
+  { "name": "Computer Vision (YOLO)", "level": 85 },
+  { "name": "SQL (MySQL)", "level": 90 },
+  { "name": "Pandas / NumPy", "level": 95 },
+  { "name": "Scikit-learn", "level": 90 },
+  { "name": "CI/CD (Jenkins/Ansible)", "level": 85 },
+  { "name": "Docker / Containerization", "level": 85 },
+  { "name": "Web Scraping (BS4)", "level": 90 },
+  { "name": "Django / Web Frameworks", "level": 80 },
+  { "name": "C++", "level": 80 },
+  { "name": "Linux / Bash Scripting", "level": 85 },
+  { "name": "AWS / Cloud", "level": 75 },
+  { "name": "A/B Testing", "level": 80 },
+  { "name": "Git / Version Control", "level": 90 },
+  { "name": "Agile / Jira", "level": 85 }
+]

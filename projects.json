@@ -1,0 +1,26 @@
+[
+  {
+    "name": "AGENTIC_LLM_WORKFLOW",
+    "desc": "Multi-agent orchestration pipeline with Judge-Evaluator loop. Achieved 90%+ ATS scores.",
+    "tags": ["LLM", "Multi-Agent", "Python"],
+    "link": "https://github.com/yourusername/agentic"
+  },
+  {
+    "name": "AUTO_DEFECT_TRIAGE",
+    "desc": "Supervised ML framework for automated defect classification with 82% accuracy.",
+    "tags": ["Scikit-learn", "ML", "Web Scraping"],
+    "link": "#"
+  },
+  {
+    "name": "FAULT_INJECTION_PIPELINE",
+    "desc": "Automated anomaly simulation pipeline. Increased defect capture by 60%.",
+    "tags": ["Python", "Jenkins", "Chaos Eng"],
+    "link": "#"
+  },
+  {
+    "name": "MOVIE_RATING_SYSTEM",
+    "desc": "NLP-based sentiment analysis predicting audience reception (88% acc).",
+    "tags": ["NLP", "Python", "Sentiment"],
+    "link": "#"
+  }
+]
