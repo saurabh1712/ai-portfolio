@@ -48,8 +48,6 @@ export default function ActivityGraph() {
           totalCount: '{{count}} contributions in the last year',
         }}
         colorScheme="dark"
-        // FIX: Removed 'hideColorLegend' because it caused the build error
-        hideTotalCount={false}
         blockSize={12}
         blockMargin={4}
       />
