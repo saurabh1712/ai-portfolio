@@ -2,7 +2,7 @@
 
 ![Portfolio Dashboard](./assets/dashboard-preview.png)
 
-**Live Site:** [https://ai-portfolio.vercel.app](https://ai-portfolio.vercel.app)
+**Live Site:** [https://saurabh-gujar-ai.vercel.app](https://saurabh-gujar-ai.vercel.app)
 
 ## ⚡ The "Why" Behind This Project
 
