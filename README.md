@@ -31,14 +31,14 @@ Instead of hard-coding a single AI provider, I architected the chat backend to b
 
 ## Tech Stack
 
-| Component | Technology |
-| :--- | :--- |
-| **Framework** | Next.js 14 (App Router) |
-| **Language** | TypeScript |
-| **AI Engine** | **Google Gemini 1.5 Flash** |
+| Component | Technology                  |
+| :--- |:----------------------------|
+| **Framework** | Next.js 14 (App Router)     |
+| **Language** | TypeScript                  |
+| **AI Engine** | **Google Gemini 2.5 Flash** |
 | **Vision** | TensorFlow.js (Client-Side) |
 | **Styling** | Tailwind CSS + Lucide React |
-| **Deployment** | Vercel (Edge Runtime) |
+| **Deployment** | Vercel (Edge Runtime)       |
 
 ---
 
