@@ -48,7 +48,7 @@ If you want to run this locally or fork the architecture:
 
 1. **Clone the repo**
    ```bash
-   git clone [https://github.com/your-username/ai-portfolio.git](https://github.com/your-username/ai-portfolio.git)
+   git clone [https://github.com/saurabh1712/ai-portfolio.git](https://github.com/saurabh1712/ai-portfolio.git)
    cd ai-portfolio
    
 
