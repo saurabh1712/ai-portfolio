@@ -12,11 +12,9 @@ export default function ActivityGraph() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Use this public API to get the contribution data
         const response = await fetch(`https://github-contributions-api.jogruber.de/v4/${username}?y=last`);
         const json = await response.json();
 
-        // The API returns 'contributions' which is exactly what the component needs
         if (json.contributions) {
           setData(json.contributions);
         }
@@ -44,14 +42,13 @@ export default function ActivityGraph() {
         data={data}
         theme={{
           light: ['#161b22', '#0e4429', '#006d32', '#26a641', '#39d353'],
-          // CUSTOM THEME: Black -> Deep Cyan -> Bright Neon Cyan
           dark: ['#1f1f1f', '#0e4429', '#006d32', '#00f3ff', '#ffffff'],
         }}
         labels={{
           totalCount: '{{count}} contributions in the last year',
         }}
         colorScheme="dark"
-        hideColorLegend
+        // FIX: Removed 'hideColorLegend' because it caused the build error
         hideTotalCount={false}
         blockSize={12}
         blockMargin={4}
