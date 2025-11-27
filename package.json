@@ -25,6 +25,7 @@
     "react": "19.2.0",
     "react-activity-calendar": "^3.0.1",
     "react-dom": "19.2.0",
+    "react-markdown": "^10.1.0",
     "react-type-animation": "^3.2.0",
     "react-webcam": "^7.2.0",
     "tailwind-merge": "^3.4.0"

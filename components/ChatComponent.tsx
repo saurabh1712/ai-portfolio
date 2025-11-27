@@ -2,12 +2,16 @@
 import { useChat } from "ai/react";
 import { Send, Bot, User, Cpu, Mic, Volume2, VolumeX } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import ReactMarkdown from 'react-markdown'; // 👈 IMPORT REACT-MARKDOWN
 
 export default function ChatComponent() {
   const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat({
     onFinish: (message) => {
       if (isSoundOn) {
-        speakText(message.content);
+        // Strip Markdown characters before speaking
+        // Removes ** ** and * * and __ __ from the spoken text
+        const cleanedText = message.content.replace(/\*\*|__|\*|_/g, '');
+        speakText(cleanedText);
       }
     },
   });
@@ -18,7 +22,6 @@ export default function ChatComponent() {
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
 
   // 1. LOAD VOICES ON MOUNT
-  // Browsers load voices async, so we need to listen for the event
   useEffect(() => {
     const loadVoices = () => {
       const availableVoices = window.speechSynthesis.getVoices();
@@ -34,23 +37,23 @@ export default function ChatComponent() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  // 2. TEXT-TO-SPEECH (STRICT ENGLISH FILTER)
+  // 2. TEXT-TO-SPEECH
   const speakText = (text: string) => {
     if (!window.speechSynthesis) return;
 
-    window.speechSynthesis.cancel(); // Stop previous speech
+    window.speechSynthesis.cancel();
 
     const utterance = new SpeechSynthesisUtterance(text);
 
     // PRIORITY LIST: Try to find these specific high-quality voices first
-    const preferredVoice = voices.find(v => v.name.includes("Google US English")) // Chrome Best
-                        || voices.find(v => v.name.includes("Samantha"))      // Mac Best
-                        || voices.find(v => v.name.includes("Microsoft David")) // Windows Best
-                        || voices.find(v => v.lang === "en-US");              // Generic US English
+    const preferredVoice = voices.find(v => v.name.includes("Google US English"))
+                        || voices.find(v => v.name.includes("Samantha"))
+                        || voices.find(v => v.name.includes("Microsoft David"))
+                        || voices.find(v => v.lang === "en-US");
 
     if (preferredVoice) {
       utterance.voice = preferredVoice;
-      utterance.lang = "en-US"; // Force language code
+      utterance.lang = "en-US";
     }
 
     utterance.rate = 1.0;
@@ -110,7 +113,10 @@ export default function ChatComponent() {
                 ? 'bg-primary/10 text-primary border border-primary/20'
                 : 'bg-white/5 text-gray-200 border border-white/5'
             }`}>
-              {m.content}
+              {/* RENDER VISUAL CONTENT USING REACT-MARKDOWN */}
+              <ReactMarkdown>
+                {m.content}
+              </ReactMarkdown>
             </div>
 
             {m.role === 'user' && <div className="mt-1"><User size={16} className="text-primary"/></div>}
