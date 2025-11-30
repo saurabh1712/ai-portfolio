@@ -1,9 +1,15 @@
 [
   {
+    "name": "AI_CODEBASE_ARCHAEOLOGIST",
+    "desc": "RAG pipeline for semantic code analysis using LangChain LCEL & Gemini 2.5. Features automated security auditing agent and context-aware retrieval.",
+    "tags": ["RAG", "LangChain", "Gemini API", "Vector DB", "Python"],
+    "link": "https://github.com/saurabh1712/codebase-rag"
+  },
+  {
     "name": "AGENTIC_LLM_WORKFLOW",
     "desc": "Multi-agent orchestration pipeline with Judge-Evaluator loop. Achieved 90%+ ATS scores.",
     "tags": ["LLM", "Multi-Agent", "Python"],
-    "link": "https://github.com/yourusername/agentic"
+    "link": "#"
   },
   {
     "name": "AUTO_DEFECT_TRIAGE",
