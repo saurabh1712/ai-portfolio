@@ -4,7 +4,7 @@
 
 **Live Site:** [https://saurabh-gujar-ai.vercel.app](https://saurabh-gujar-ai.vercel.app)
 
-## ⚡ The "Why" Behind This Project
+## The "Why" Behind This Project
 
 I built this portfolio to solve a specific problem: **Static PDF resumes don't prove engineering skills.**
 
@@ -42,7 +42,7 @@ Instead of hard-coding a single AI provider, I architected the chat backend to b
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 If you want to run this locally or fork the architecture:
 
@@ -69,7 +69,7 @@ Get a free key from aistudio.google.com
 Open http://localhost:3000 with your browser to see the result.
 
 
-## 📌 Project Status
+## Project Status
 - [x] v1.0: Core RAG Chat & Vision System deployed.
 
 - [x] v1.1: Added Voice I/O (Speech Synthesis/Recognition).
@@ -79,7 +79,7 @@ Open http://localhost:3000 with your browser to see the result.
 - [ ] Future: Implementing a vector database (Pinecone) for larger document ingestion.
 
 
-## 📬 Contact
+## Contact
 ### Saurabh Gujar
 
  - Email: saurabhgujar17@gmail.com
